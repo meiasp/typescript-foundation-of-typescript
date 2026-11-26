@@ -1,5 +1,18 @@
 function calculate(a: number, b: number, operator: string): number | string {
-  //Start Coding Here
+  let operatorValue: number | string = 0;
+  switch (operator){
+    case "add":
+      operatorValue = a+b;
+      break;
+    case "multiply":
+      operatorValue = a*b;
+      break;
+    case "divide":
+      operatorValue = a/b;
+      break;
+    case "mod":
+      operatorValue = "Invalid operator";
+  } return operatorValue
 }
 
 console.log(calculate(10, 5, "add")); // 15
